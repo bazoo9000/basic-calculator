@@ -408,7 +408,7 @@ namespace CalculatorWPF
         private bool IsNumTooSmall(decimal num)
         {
             int count = 0;
-            while(num <= 1.0m)
+            while(num <= 1.0m && num != 0.0m)
             {
                 count++;
                 num *= 10;
